@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formaction and formmethod and formtarget and target atttributes</title>
+</head>			
+<body>	 
+	<form id="form1" method="get" action="gotform.html" autocomplete="on" accept-charset="UTF-8" target="_blank">
+	
+		Name: <input type="text" name="student_name" autofocus placeholder="Enter your name.."><br><br>
+		Rollno: <input type="number" name="Rollno" value="51" required><br><br>
+		city: <input type="text" name="city" dirname="city.dir"><br><br>
+		Password: <input type="password" name="password" required form="form2"><br><br>
+	
+		<input type="submit" name="sub" value="submit">
+		<input type="submit" name="asub" value="admin_submit" formaction="admin.html" formmethod="post" 
+		formtarget="_self">
+	</form>
+</body>		
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>select visibilty check</title>
+		<script>
+			function chan()
+			{
+				console.log("hello");
+				var selvalue=document.getElementById("sel").value;
+				var d1=document.getElementById("d1");
+				if (selvalue == "3") {
+                toAppend = "<label>Name3</label><input type='text' ><br><br>";d1.innerHTML = toAppend;  return; }
+				if (selvalue == "4") {
+                toAppend = "<label>Name3</label><input type='text' ><br><br><label>Name4</label><input type='text'><br><br>";d1.innerHTML = toAppend;  return; }
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+		Select Course:
+		<select id="sel" onchange="chan()";>
+			<option value="1"> 1</option>
+			<option value="2"> 2</option>
+			<option value="3"> 3</option>
+			<option value="4"> 4</option>
+		</select>
+		<br><br>
+		<label>Name1</label>
+			<input type="text" id="name1"> <br><br>
+		<label>Name2</label>
+			<input type="text" id="name2"><br><br>
+		<div id="d1"> </div>
+		<input type="submit" value="submit">
+		</form>
+	</body>
+</html>

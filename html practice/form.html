@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form tag</title>
+</head>			
+<body>	 
+	<form name="form1" method="get" action="gotform.html" autocomplete="on" accept-charset="UTF-8" formnovalidate>
+		Searchbox: <input type="search" name="searchbox"><br><br>
+		Name: <input type="text" name="student_name" autofocus placeholder="Enter your name.."><br><br>
+		Email: <INPUT type="email" name="email" disabled value="vaishaligupta982@gmail.com" v><br><br>
+		Rollno: <input type="number" name="Rollno" value="51" required><br><br>
+		Password: <input type="password" name="password" required formnovalidate><br><br>
+		Mobile_Number: <input type="tel" name="phone"><br><br>
+		Date_of_Birth: <input type="date" name="dob"><br><br>
+		<input type="hidden" name="country" value="india">
+		Admission_time: <input type="time" name="time"><br><br>
+		website: <input type="url" name="web"><br><br>
+		Marks: <input type="range" name="marks"><br><br>
+		date_of_join and time: <input type="datetime-local" name="doj_toj"><br><br>
+		month_of_joining: <input type="month" name="mon"><br><br>
+		week_of_joining: <input type="week" name="week"> <br><br>
+		favourite_color: <input type="color" name="color"><br><br>
+		Gender:<label> <input type="radio" name="sex" value="m">MALE </label>
+				<label> <input type="radio" name="sex" value="f" checked>FEMALE </label> <br><br>
+		Course: <input type="checkbox" name="course" value="MCA" checked>MCA
+				<input type="checkbox" name="course" VALUE="MBA">MBA
+				<input type="checkbox" name="course" VALUE="MSC">MSC <br><br>
+		Subjects: <select name="subjects" MULTIPLE SIZE="2">
+					<option value="c++">c++</option>
+					<option value="java">java</option>
+					<option value="html">html</option>
+					<option value="js">javascript</option>
+					</select>
+					<br><br>
+		Attach_documents:<input type="file" name="docs"> <br><br>
+		image as submit button: <input type="image" src="oswald.jpg" width="200" name="pic"><br><br>
+	
+		<input type="submit" name="sub" value="submit">
+		<input type="reset" value="reset">
+		<input type="button" value="send">
+	</form>
+</body>		
+</html>

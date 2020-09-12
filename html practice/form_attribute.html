@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form as atttribute</title>
+</head>			
+<body>	 
+	<form id="form1" method="get" action="gotform.html" autocomplete="on" accept-charset="UTF-8">
+	
+		Name: <input type="text" name="student_name" autofocus placeholder="Enter your name.."><br><br>
+		Rollno: <input type="number" name="Rollno" value="51" required><br><br>
+		city: <input type="text" name="city" dirname="city.dir"><br><br>
+		Password: <input type="password" name="password" required form="form2"><br><br>
+	
+		<input type="submit" name="sub" value="submit">
+	</form>
+	<br><br><hr>
+	
+	<form id="form2" method="get" action="gotform.html" autocomplete="on" accept-charset="UTF-8">
+	
+		Name: <input type="text" name="student_name" autofocus placeholder="Enter your name.."><br><br>
+		Rollno: <input type="number" name="Rollno" value="51" required><br><br>
+	
+		<input type="submit" name="sub" value="submit">
+	</form>
+	
+</body>		
+</html>
